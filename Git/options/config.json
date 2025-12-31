@@ -1,0 +1,4 @@
+{
+    "BTCUSDT": {"price": 110000, "step": 1000, "band": 0.3},
+    "ETHUSDT": {"price": 3800, "step": 100, "band": 0.3}
+}

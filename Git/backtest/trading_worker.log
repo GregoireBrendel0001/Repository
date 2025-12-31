@@ -1,0 +1,400 @@
+2025-11-12 20:59:26,128 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 20:59:26,129 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 20:59:26,131 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 20:59:26,141 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 21:00:24,181 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 21:00:24,182 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 21:00:24,184 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 21:00:24,194 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 21:08:36,622 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 21:08:36,623 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 21:08:36,624 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 21:08:36,634 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 21:09:20,099 - utils.Backtest - INFO - Stoploss rich for position 8962977099
+2025-11-12 21:09:28,085 - utils.Backtest - INFO - Stoploss rich for position 8444997393
+2025-11-12 21:09:32,596 - utils.Backtest - INFO - Stoploss rich for position 5237677906
+2025-11-12 21:09:36,620 - utils.Backtest - INFO - Stoploss rich for position 4713969825
+2025-11-12 21:09:55,498 - utils.Backtest - INFO - Stoploss rich for position 4455526024
+2025-11-12 21:10:19,647 - utils.Backtest - INFO - Backtest completed
+2025-11-12 21:31:32,766 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 21:31:32,767 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 21:31:32,768 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 21:31:32,779 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 21:33:00,163 - utils.Backtest - INFO - Stoploss rich for position 4937434617
+2025-11-12 21:33:07,828 - utils.Backtest - INFO - Stoploss rich for position 5382051374
+2025-11-12 21:33:17,051 - utils.Backtest - INFO - Stoploss rich for position 7369328835
+2025-11-12 21:33:19,996 - utils.Backtest - INFO - Stoploss rich for position 9787837442
+2025-11-12 21:33:40,309 - utils.Backtest - INFO - Stoploss rich for position 9426430573
+2025-11-12 21:34:13,916 - utils.Backtest - INFO - Backtest completed
+2025-11-12 21:39:11,576 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 21:39:11,577 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 21:39:11,578 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 21:39:11,588 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 21:40:11,868 - utils.Backtest - INFO - Stoploss rich for position 3183779471
+2025-11-12 21:40:38,079 - utils.Backtest - INFO - Stoploss rich for position 1673149742
+2025-11-12 21:40:44,224 - utils.Backtest - INFO - Stoploss rich for position 4932345544
+2025-11-12 21:40:46,852 - utils.Backtest - INFO - Stoploss rich for position 9555179739
+2025-11-12 21:41:08,336 - utils.Backtest - INFO - Stoploss rich for position 1912589052
+2025-11-12 21:41:53,018 - utils.Backtest - INFO - Backtest completed
+2025-11-12 21:45:51,383 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 21:45:51,384 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 21:45:51,386 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 21:45:51,398 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 21:48:16,320 - utils.Backtest - ERROR - Error processing data for strategy MeanRV1FTTUSDT: operation cancelled
+2025-11-12 21:48:16,325 - utils.Backtest - ERROR - Traceback (most recent call last):
+  File "/Users/gregoirebrendel/Documents/Code/quantdev/PROD/Generic utils/backtest/utils/Backtest.py", line 106, in get_data_and_compute_indicators
+    olhcv_list = list(olhcv_data)
+                 ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1284, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1260, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1231, in _refresh
+    self._send_message(g)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1102, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1917, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 2026, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1993, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 2730, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 2891, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1908, in _cmd
+    return server.run_operation(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/server.py", line 208, in run_operation
+    reply = conn.receive_message(request_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/pool.py", line 470, in receive_message
+    self._raise_connection_failure(error)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/pool.py", line 467, in receive_message
+    return receive_message(self, request_id, self.max_message_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/network_layer.py", line 777, in receive_message
+    data = receive_data(conn, length - 16, deadline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/network_layer.py", line 361, in receive_data
+    raise _OperationCancelled("operation cancelled") from None
+pymongo.errors._OperationCancelled: operation cancelled
+
+2025-11-12 21:49:00,172 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 21:49:00,174 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 21:49:00,175 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 21:49:00,177 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 21:50:00,640 - utils.Backtest - ERROR - Error processing data for strategy MeanRV1FTTUSDT: operation cancelled
+2025-11-12 21:50:00,645 - utils.Backtest - ERROR - Traceback (most recent call last):
+  File "/Users/gregoirebrendel/Documents/Code/quantdev/PROD/Generic utils/backtest/utils/Backtest.py", line 106, in get_data_and_compute_indicators
+    olhcv_list = list(olhcv_data)
+                 ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1284, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1260, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1231, in _refresh
+    self._send_message(g)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1102, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1917, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 2026, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1993, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 2730, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 2891, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1908, in _cmd
+    return server.run_operation(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/server.py", line 208, in run_operation
+    reply = conn.receive_message(request_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/pool.py", line 470, in receive_message
+    self._raise_connection_failure(error)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/pool.py", line 467, in receive_message
+    return receive_message(self, request_id, self.max_message_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/network_layer.py", line 777, in receive_message
+    data = receive_data(conn, length - 16, deadline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/network_layer.py", line 361, in receive_data
+    raise _OperationCancelled("operation cancelled") from None
+pymongo.errors._OperationCancelled: operation cancelled
+
+2025-11-12 21:50:56,808 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 21:50:56,811 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 21:50:56,812 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 21:50:56,824 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 21:52:13,347 - utils.Backtest - INFO - Stoploss rich for position 1253758737
+2025-11-12 21:52:22,984 - utils.Backtest - INFO - Stoploss rich for position 7982990278
+2025-11-12 21:52:28,425 - utils.Backtest - INFO - Stoploss rich for position 3196727148
+2025-11-12 21:52:30,825 - utils.Backtest - INFO - Stoploss rich for position 6172869087
+2025-11-12 21:52:45,035 - utils.Backtest - INFO - Stoploss rich for position 8650496964
+2025-11-12 21:53:23,112 - utils.Backtest - INFO - Backtest completed
+2025-11-12 22:01:28,152 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 22:01:28,154 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 22:01:28,155 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 22:01:28,166 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 22:02:28,250 - utils.Backtest - INFO - Stoploss rich for position 6457566003
+2025-11-12 22:02:41,563 - utils.Backtest - INFO - Stoploss rich for position 6308653034
+2025-11-12 22:02:46,609 - utils.Backtest - INFO - Stoploss rich for position 3811455961
+2025-11-12 22:02:48,145 - utils.Backtest - INFO - Stoploss rich for position 3575417313
+2025-11-12 22:03:04,601 - utils.Backtest - INFO - Stoploss rich for position 1340795251
+2025-11-12 22:03:30,825 - utils.Backtest - INFO - Backtest completed
+2025-11-12 22:05:04,304 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 22:05:04,305 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 22:05:04,306 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 22:05:04,317 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 22:07:31,277 - utils.Backtest - ERROR - Error processing data for strategy MeanRV1FTTUSDT: operation cancelled
+2025-11-12 22:07:31,289 - utils.Backtest - ERROR - Traceback (most recent call last):
+  File "/Users/gregoirebrendel/Documents/Code/quantdev/PROD/Generic utils/backtest/utils/Backtest.py", line 106, in get_data_and_compute_indicators
+    olhcv_list = list(olhcv_data)
+                 ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1284, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1260, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1231, in _refresh
+    self._send_message(g)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1102, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1917, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 2026, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1993, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 2730, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 2891, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1908, in _cmd
+    return server.run_operation(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/server.py", line 208, in run_operation
+    reply = conn.receive_message(request_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/pool.py", line 470, in receive_message
+    self._raise_connection_failure(error)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/pool.py", line 467, in receive_message
+    return receive_message(self, request_id, self.max_message_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/network_layer.py", line 777, in receive_message
+    data = receive_data(conn, length - 16, deadline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/network_layer.py", line 361, in receive_data
+    raise _OperationCancelled("operation cancelled") from None
+pymongo.errors._OperationCancelled: operation cancelled
+
+2025-11-12 22:08:24,494 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 22:08:24,496 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 22:08:24,498 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 22:08:24,501 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 22:09:25,924 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 22:09:25,925 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 22:09:25,927 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 22:09:25,938 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 22:10:36,464 - utils.Backtest - ERROR - Error processing data for strategy MeanRV1FTTUSDT: operation cancelled
+2025-11-12 22:10:36,479 - utils.Backtest - ERROR - Traceback (most recent call last):
+  File "/Users/gregoirebrendel/Documents/Code/quantdev/PROD/Generic utils/backtest/utils/Backtest.py", line 106, in get_data_and_compute_indicators
+    olhcv_list = list(olhcv_data)
+                 ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1284, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1260, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1231, in _refresh
+    self._send_message(g)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/cursor.py", line 1102, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1917, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 2026, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1993, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 2730, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 2891, in _read
+    return self._func(self._session, self._server, conn, read_pref)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1908, in _cmd
+    return server.run_operation(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/helpers.py", line 47, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/server.py", line 208, in run_operation
+    reply = conn.receive_message(request_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/pool.py", line 470, in receive_message
+    self._raise_connection_failure(error)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/synchronous/pool.py", line 467, in receive_message
+    return receive_message(self, request_id, self.max_message_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/network_layer.py", line 777, in receive_message
+    data = receive_data(conn, length - 16, deadline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pymongo/network_layer.py", line 361, in receive_data
+    raise _OperationCancelled("operation cancelled") from None
+pymongo.errors._OperationCancelled: operation cancelled
+
+2025-11-12 22:11:05,136 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-12 22:11:05,137 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-12 22:11:05,139 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-12 22:11:05,149 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-12 22:12:20,639 - utils.Backtest - INFO - Stoploss rich for position 5690649270
+2025-11-12 22:12:31,105 - utils.Backtest - INFO - Stoploss rich for position 8150897088
+2025-11-12 22:12:36,124 - utils.Backtest - INFO - Stoploss rich for position 6784181304
+2025-11-12 22:12:39,798 - utils.Backtest - INFO - Stoploss rich for position 2150781572
+2025-11-12 22:12:55,103 - utils.Backtest - INFO - Stoploss rich for position 7780020215
+2025-11-12 22:13:18,554 - utils.Backtest - INFO - Backtest completed
+2025-11-17 18:35:00,059 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-17 18:35:00,061 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-17 18:35:00,062 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-17 18:35:00,073 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-17 18:35:44,873 - utils.Backtest - INFO - Stoploss rich for position 8350309102
+2025-11-17 18:35:53,506 - utils.Backtest - INFO - Stoploss rich for position 6215712104
+2025-11-17 18:35:58,559 - utils.Backtest - INFO - Stoploss rich for position 7570083321
+2025-11-17 18:36:01,475 - utils.Backtest - INFO - Stoploss rich for position 1667152990
+2025-11-17 18:36:13,551 - utils.Backtest - INFO - Stoploss rich for position 8157428652
+2025-11-17 18:36:28,829 - utils.Backtest - INFO - Backtest completed
+2025-11-17 19:17:18,394 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-17 19:17:18,396 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-17 19:17:18,397 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-17 19:17:18,408 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-17 19:17:45,877 - utils.Backtest - INFO - Stoploss rich for position 5810261574
+2025-11-17 19:17:54,612 - utils.Backtest - INFO - Stoploss rich for position 7862755131
+2025-11-17 19:18:00,716 - utils.Backtest - INFO - Stoploss rich for position 2957722848
+2025-11-17 19:18:03,885 - utils.Backtest - INFO - Stoploss rich for position 6873260148
+2025-11-17 19:18:16,170 - utils.Backtest - INFO - Stoploss rich for position 8266010459
+2025-11-17 19:18:34,328 - utils.Backtest - INFO - Backtest completed
+2025-11-17 19:25:04,041 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-17 19:25:04,043 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-17 19:25:04,044 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-17 19:25:04,054 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-17 19:25:37,074 - utils.Backtest - INFO - Stoploss rich for position 3339562258
+2025-11-17 19:25:44,003 - utils.Backtest - INFO - Stoploss rich for position 2345833178
+2025-11-17 19:25:50,152 - utils.Backtest - INFO - Stoploss rich for position 6969721718
+2025-11-17 19:25:52,871 - utils.Backtest - INFO - Stoploss rich for position 7569551136
+2025-11-17 19:26:05,214 - utils.Backtest - INFO - Stoploss rich for position 8355674947
+2025-11-17 19:26:27,739 - utils.Backtest - INFO - Backtest completed
+2025-11-17 19:44:24,967 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-17 19:44:24,969 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-17 19:44:24,970 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-17 19:44:24,982 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-17 19:44:54,987 - utils.Backtest - INFO - Stoploss rich for position 4923273399
+2025-11-17 19:45:04,497 - utils.Backtest - INFO - Stoploss rich for position 7422568358
+2025-11-17 19:45:09,421 - utils.Backtest - INFO - Stoploss rich for position 1707902993
+2025-11-17 19:45:12,585 - utils.Backtest - INFO - Stoploss rich for position 2778184303
+2025-11-17 19:45:26,332 - utils.Backtest - INFO - Stoploss rich for position 9338021906
+2025-11-17 19:45:45,913 - utils.Backtest - INFO - Backtest completed
+2025-11-19 21:49:55,083 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-19 21:49:55,086 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-19 21:49:55,089 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-19 21:49:55,093 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-19 21:50:35,848 - utils.Backtest - INFO - Stoploss rich for position 5534387622
+2025-11-19 21:50:41,061 - utils.Backtest - INFO - Stoploss rich for position 5540236901
+2025-11-19 21:50:44,305 - utils.Backtest - INFO - Stoploss rich for position 9346948879
+2025-11-19 21:50:46,142 - utils.Backtest - INFO - Stoploss rich for position 2313044086
+2025-11-19 21:50:57,736 - utils.Backtest - INFO - Stoploss rich for position 7703511216
+2025-11-19 21:51:13,109 - utils.Backtest - INFO - Backtest completed
+2025-11-23 22:26:04,119 - utils.Backtest - INFO - Loading strategies from config file...
+2025-11-23 22:26:04,122 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-11-23 22:26:04,125 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-11-23 22:26:04,130 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-11-23 22:26:48,522 - utils.Backtest - INFO - Stoploss rich for position 8995330186
+2025-11-23 22:26:53,578 - utils.Backtest - INFO - Stoploss rich for position 1410244809
+2025-11-23 22:26:58,600 - utils.Backtest - INFO - Stoploss rich for position 3502320810
+2025-11-23 22:27:00,077 - utils.Backtest - INFO - Stoploss rich for position 8912834815
+2025-11-23 22:27:12,365 - utils.Backtest - INFO - Stoploss rich for position 9864221049
+2025-11-23 22:27:28,636 - utils.Backtest - INFO - Backtest completed
+2025-12-06 17:48:56,100 - utils.Backtest - INFO - Loading strategies from config file...
+2025-12-06 17:48:56,102 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-12-06 17:48:56,103 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-12-06 17:48:56,113 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-12-06 17:49:35,820 - utils.Backtest - INFO - Stoploss rich for position 6483873943
+2025-12-06 17:49:42,927 - utils.Backtest - INFO - Stoploss rich for position 7635511876
+2025-12-06 17:49:48,648 - utils.Backtest - INFO - Stoploss rich for position 8898850471
+2025-12-06 17:49:50,930 - utils.Backtest - INFO - Stoploss rich for position 2649854719
+2025-12-06 17:50:00,620 - utils.Backtest - INFO - Stoploss rich for position 3948899214
+2025-12-06 17:50:19,646 - utils.Backtest - INFO - Backtest completed
+2025-12-08 20:22:47,610 - utils.Backtest - INFO - Loading strategies from config file...
+2025-12-08 20:22:47,612 - utils.Backtest - INFO - Strategies loaded successfully.
+2025-12-08 20:22:47,618 - utils.Backtest - INFO - Configuration loaded from .env file.
+2025-12-08 20:22:47,629 - utils.Backtest - INFO - MongoDB client initialized with URI and port.
+2025-12-08 20:23:29,449 - utils.Backtest - INFO - Stoploss rich for position 2430997874
+2025-12-08 20:23:36,700 - utils.Backtest - INFO - Stoploss rich for position 2299099078
+2025-12-08 20:23:41,349 - utils.Backtest - INFO - Stoploss rich for position 5215587690
+2025-12-08 20:23:42,946 - utils.Backtest - INFO - Stoploss rich for position 5767184272
+2025-12-08 20:23:56,266 - utils.Backtest - INFO - Stoploss rich for position 2314929957
+2025-12-08 20:24:14,643 - utils.Backtest - INFO - Backtest completed

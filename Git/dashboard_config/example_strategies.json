@@ -1,0 +1,69 @@
+{
+    "MeanRV1FTTUSDT" : {
+      "class": "MeanReversingStrategy",
+      "module": "Meanreversing_strategy",
+      "pair_name": "FTTUSDT",
+      "balance_currency": "USDT",
+      "spot_currency": "FTT",
+      "start_date": "2025-01-01 00:00",
+      "end_date": "2025-10-01 00:00",
+      "allocated_weight": 0.33,
+      "indicators": [
+        {
+          "name" : "rsi",
+          "column_name" : ["RSI12"],
+          "params": {
+            "window": 12
+          }
+        }
+      ],
+      "data_aggregation_period" : "3min",
+      "data_aggregation_period_stoploss" : "1min",
+      "stop_loss": 0.975,
+      "adaptative_stop_loos":0.25,
+      "take_profit": {
+          "T1" : {"Level": 1.25, "Order_weight": 0.25},
+          "T2" : {"Level": 1.5, "Order_weight": 0.25},
+          "T3": {"Level": 1.75, "Order_weight": 0.5}
+        },
+      "leverage": 1,
+      "extra_filter": false
+    },
+    "MeanRV2BTCUSDT" : {
+      "class": "MeanReversingStrategy",
+      "module": "Meanreversing_strategy",
+      "pair_name": "BTCUSDT",
+      "balance_currency": "USDT",
+      "spot_currency": "BTC",
+      "start_date": "2025-01-01 00:00",
+      "end_date": "2025-10-01 00:00",
+      "allocated_weight": 0.67,
+      "indicators": [
+        {
+          "name" : "rsi",
+          "column_name" : ["RSI14"],
+          "params": {
+            "window": 14
+          }
+        },
+        {
+          "name" : "sma",
+          "column_name" : ["SMA20"],
+          "params": {
+            "window": 20
+          }
+        }
+      ],
+      "data_aggregation_period" : "5min",
+      "data_aggregation_period_stoploss" : "1min",
+      "stop_loss": 0.96,
+      "adaptative_stop_loos": 0.3,
+      "take_profit": {
+          "T1" : {"Level": 1.3, "Order_weight": 0.3},
+          "T2" : {"Level": 1.6, "Order_weight": 0.3},
+          "T3": {"Level": 2.0, "Order_weight": 0.4}
+        },
+      "leverage": 2,
+      "extra_filter": true
+    }
+}

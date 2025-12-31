@@ -1,0 +1,37 @@
+{
+    "MeanRV1FTTUSDT" : {
+      "class": "MeanReversingStrategy",
+      "module": "Meanreversing_strategy",
+      "pair_name": "FTTUSDT",
+      "balance_currency": "USDT",
+      "spot_currency": "FTT",
+      "start_date": "2025-01-01 00:00",
+      "end_date": "2025-10-01 00:00",
+      "allocated_weight": 0.33,
+      "required_data_config": {},
+      "required_data_depth": 500,
+      "indicators": [
+        {
+          "name" : "rsi",
+          "column_name" : ["RSI12"],
+          "params": {
+            "window": 12
+          }
+        }
+      ],
+      "tick_period": 3,
+      "stoploss_tick_period": 1,
+      "data_aggregation_period" : "3min",
+      "data_aggregation_period_stoploss" : "1min",
+      "stop_loss": 0.975,
+      "adaptative_stop_loos":0.25,
+      "take_profit": {
+          "T1" : {"Level": 1.25, "Order_weight": 0.25},
+          "T2" : {"Level": 1.5, "Order_weight": 0.25},
+          "T3": {"Level": 1.75, "Order_weight": 0.5}
+        },
+      "leverage": 1,
+      "extra_filter": false
+    }
+}
+

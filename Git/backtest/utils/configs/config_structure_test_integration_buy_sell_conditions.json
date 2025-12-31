@@ -1,0 +1,42 @@
+{
+    "MeanRV1USTCTRY": {
+      "class": "MeanReversingStrategy",
+      "module": "Meanreversing_strategy",
+      "pair_name": "USTCTRY",
+      "balance_currency": "TRY",
+      "spot_currency": "USDT",
+      "allocated_weight": 0.33,
+      "required_data_config": {},
+      "required_data_depth": 500,
+      "indicators": [...],
+      "tick_period": 3,
+      "stoploss_tick_period": 1,
+      "data_aggregation_period": "3min",
+      "data_aggregation_period_stoploss": "1min",
+      "stop_loss": 0.25,
+      "adaptative_stop_loos": 0.25,
+      "take_profit": {...},
+      "leverage": 1,
+      "extra_filter": false,
+      "strategy_logic": {
+        "buy_condition": {
+          "expression": "RSI(14) < 30 AND CROSSOVER(price, SMA(20))",
+          "metadata": {
+            "indicators_used": ["RSI", "SMA"],
+            "complexity": "medium",
+            "created_by": "user",
+            "last_modified": "2024-01-15T10:30:00Z"
+          }
+        },
+        "sell_condition": {
+          "expression": "RSI(14) > 70 OR CROSSOVER(SMA(20), price)",
+          "metadata": {
+            "indicators_used": ["RSI", "SMA"],
+            "complexity": "medium",
+            "created_by": "user",
+            "last_modified": "2024-01-15T10:30:00Z"
+          }
+        }
+      }
+    }
+  }
