@@ -195,7 +195,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Constants
-REQUIRED_FILES = ['Market_data.xlsx', 'Trade_report.xlsx', 'Trade_report_backtest.xlsx']
 EXCEL_ENGINES = ['openpyxl', 'xlrd', 'odf']
 CACHE_TTL = 3600  # 1 hour
 
